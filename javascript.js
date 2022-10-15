@@ -52,13 +52,18 @@ function game(){
             computerCount += 1;
         }
     });
+    pickWinner(playerCount, computerCount, count);
+    
+}
+
+function pickWinner(playerCount, computerCount, count){
     if (playerCount === computerCount){
-        console.log("It's a draw")
+        console.log("It's a draw" + "\n\n" + count);
     }
     else if (playerCount > computerCount){
-        console.log("Player wins with " + playerCount);
+        console.log("Player wins with " + playerCount + "\n\n" + count);
     } else {
-        console.log("Computer wins with " + computerCount)
+        console.log("Computer wins with " + computerCount + "\n\n" + count)
     }
 }
 
